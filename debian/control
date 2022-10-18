@@ -1,0 +1,28 @@
+Source: ruby-minitest-shared-description
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Dmitry Borodaenko <angdraug@debian.org>
+Build-Depends: debhelper (>= 11~),
+               gem2deb,
+               rake,
+               ruby-minitest
+Standards-Version: 4.1.3
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-minitest-shared-description.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-minitest-shared-description
+Homepage: https://github.com/jeremyevans/minitest-shared_description
+XS-Ruby-Versions: all
+
+Package: ruby-minitest-shared-description
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ruby-minitest,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Support for shared specs and shared spec subclasses for Minitest
+ minitest-shared_description adds support for shared specs and shared spec
+ subclasses to Minitest.  Minitest supports shared specs by default using plain
+ ruby modules, but does not support shared spec subclasses.  In addition to
+ making it possible to share subclasses, minitest-shared_desciption also
+ provides a slightly nicer interface for sharing specs.

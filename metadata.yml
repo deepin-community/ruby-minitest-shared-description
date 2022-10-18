@@ -1,0 +1,78 @@
+--- !ruby/object:Gem::Specification
+name: minitest-shared_description
+version: !ruby/object:Gem::Version
+  version: 1.0.0
+platform: ruby
+authors:
+- Jeremy Evans
+autorequire: 
+bindir: bin
+cert_chain: []
+date: 2015-05-06 00:00:00.000000000 Z
+dependencies:
+- !ruby/object:Gem::Dependency
+  name: minitest
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">"
+      - !ruby/object:Gem::Version
+        version: '5'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">"
+      - !ruby/object:Gem::Version
+        version: '5'
+description: |
+  minitest-shared_description adds support for shared specs and shared spec subclasses
+  to Minitest.  Minitest supports shared specs by default using plain ruby modules, but
+  does not support shared spec subclasses.  In addition to making it possible to share
+  subclasses, minitest-shared_desciption also provides a slightly nicer interface for
+  sharing specs.
+email: code@jeremyevans.net
+executables: []
+extensions: []
+extra_rdoc_files:
+- README.rdoc
+- CHANGELOG
+- MIT-LICENSE
+files:
+- CHANGELOG
+- MIT-LICENSE
+- README.rdoc
+- Rakefile
+- lib/minitest/shared_description.rb
+- spec/minitest-shared_description_spec.rb
+homepage: http://github.com/jeremyevans/minitest-shared_description
+licenses:
+- MIT
+metadata: {}
+post_install_message: 
+rdoc_options:
+- "--quiet"
+- "--line-numbers"
+- "--inline-source"
+- "--title"
+- 'minitest-shared_description: support for shared specs and shared spec subclasses'
+- "--main"
+- README.rdoc
+require_paths:
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement
+  requirements:
+  - - ">="
+    - !ruby/object:Gem::Version
+      version: '0'
+required_rubygems_version: !ruby/object:Gem::Requirement
+  requirements:
+  - - ">="
+    - !ruby/object:Gem::Version
+      version: '0'
+requirements: []
+rubyforge_project: 
+rubygems_version: 2.4.5
+signing_key: 
+specification_version: 4
+summary: Support for shared specs and shared spec subclasses for Minitest
+test_files: []

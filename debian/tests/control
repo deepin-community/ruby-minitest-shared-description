@@ -1,0 +1,3 @@
+Tests: run-test
+Depends: @, quilt, gem2deb-test-runner, rake, ruby-minitest
+Restrictions: allow-stderr

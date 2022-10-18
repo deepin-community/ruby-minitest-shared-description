@@ -1,0 +1,33 @@
+ruby-minitest-shared-description (1.0.0-2.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Tue, 29 Dec 2020 04:17:05 +0100
+
+ruby-minitest-shared-description (1.0.0-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Cédric Boutillier ]
+  * Use https:// in Vcs-* fields
+  * Run wrap-and-sort on packaging files
+
+  [ HIGUCHI Daisuke (VDR dai) ]
+  * Use salsa.debian.org in Vcs-* fields
+  * Bump debhelper compatibility level to 11
+  * Bump Standards-Version to 4.1.3 (no changes needed)
+  * eliminate lintian warning: homepage-field-uses-insecure-uri
+  * eliminate lintian warning: insecure-copyright-format-uri
+  * eliminate lintian warning: debian-watch-uses-insecure-uri
+  * d/p/remove_rubygems_from_spec_runner.patch: Remove -rubygems from
+    spec runner for ruby 2.5 compatibility (Closes: #893823)
+  * support autopkgtest.
+
+ -- HIGUCHI Daisuke (VDR dai) <dai@debian.org>  Sat, 31 Mar 2018 02:54:05 +0900
+
+ruby-minitest-shared-description (1.0.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #811337)
+
+ -- Dmitry Borodaenko <angdraug@debian.org>  Sun, 07 Feb 2016 16:34:39 -0800

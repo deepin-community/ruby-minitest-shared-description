@@ -1,0 +1,19 @@
+Description: Remove -rubygems from spec runner for ruby 2.5 compatibility
+Author: Jeremy Evans <code@jeremyevans.net>
+Last-Update: 2017-11-06
+Bug-Debian: https://bugs.debian.org/893823
+Origin: upstream, https://github.com/jeremyevans/minitest-shared_description/commit/c59037f6ec
+
+diff --git a/Rakefile b/Rakefile
+index fc8db7e..eb18026 100644
+--- a/Rakefile
++++ b/Rakefile
+@@ -12,7 +12,7 @@ end
+ 
+ desc "Run specs"
+ task :spec do
+-  sh %{#{FileUtils::RUBY} -I lib -rubygems ./spec/minitest-shared_description_spec.rb}
++  sh %{#{FileUtils::RUBY} -I lib ./spec/minitest-shared_description_spec.rb}
+ end
+ 
+ task :default=>:spec
